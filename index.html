@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>团队协作测试</title>
+		 <style>
+		 	.toggle{
+		 		display: block;
+		 	}
+		 	.toggle.dn{
+		 		display: none;
+		 	}
+		 </style>
+	</head>
+	<body>
+		
+	<h3>团队协作首页</h3>
+	<button id="btn">点击我</button>
+	 <ul class="toggle" >
+	 	<li>apple</li>
+	 	<li>pear</li>
+	 	<li>banana</li>
+	 </ul>
+	 
+	 <script>
+	 	window.onload = function(){
+	 		var btn = document.getElementById("btn");
+	 		var ele = document.getElementsByClassName("toggle"); 
+	 		btn.onclick = function(){
+	 			var classlist = document.querySelector('toggle').classList;
+	 			if(classlist.contains("dn")){
+	 				 alert('1')		
+	 			}else{
+	 				 alert('2')		
+	 			}
+	 		}
+	 	}
+	 </script>
+	</body>
+</html>
